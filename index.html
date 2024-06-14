@@ -10,7 +10,7 @@
 <body>
     <nav class="bg flex p-5 bg-green-100 items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:hidden">
+        <svg id="open-nav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
           
@@ -20,6 +20,17 @@
             <li class="hover:text-black hover:underline"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <section id="side-nav" class="bg-green-100 fixed top-0 z-20 transition-all duration-500" style="width: 40%; height:100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="cursor-pointer inline">X</p>
+        </div>
+        <ul class="text-gray-500 gap-5 flex flex-col items-center p-10">
+            <li class="hover:text-black hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:text-black hover:underline"><a href="./products.html">Products</a></li>
+            <li class="hover:text-black hover:underline"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </section>
 
     <section class="p-6 md:p-10 md:py-12 bg-green-100 flex justify-center">
         <div>
@@ -121,5 +132,7 @@
         <p>The Standard chunck of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
         <p>&copy; 2024 Greenday.com</p>
     </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>
